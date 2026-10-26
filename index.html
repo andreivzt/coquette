@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Florăria Coquette Focșani - Buchete de flori proaspete, cadouri speciale exclusiviste și decor complet pentru evenimente: botezuri, majorate, nunți. Comandă rapid pe WhatsApp!">
+        content="Florăria Coquette Focșani - Buchete de flori proaspete, cadouri speciale exclusiviste și decor complet pentru evenimente: botezuri, majorate, nunți.">
     <title>Florăria Coquette | Buchete, Cadouri & Decor Evenimente Focșani</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,10 +35,6 @@
                 <a href="#about">Povestea Noastră</a>
                 <a href="#contact">Contact</a>
             </div>
-            <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20V%C4%83%20contactez%20de%20pe%20site-ul%20Flor%C4%83ria%20Coquette."
-                target="_blank" class="nav-wa-btn" title="Scrie-ne pe WhatsApp">
-                <span class="wa-icon">💬</span> Comandă WhatsApp
-            </a>
             <div class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Meniu">
                 <span></span>
                 <span></span>
@@ -53,17 +49,13 @@
             <div class="hero-bg" id="hero-bg"></div>
             <div class="hero-overlay"></div>
             <div class="hero-content">
-                <span class="hero-tag fade-up">Atelier Floral & Butic de Cadouri în Focșani</span>
+                <span class="hero-tag fade-up">Atelier Floral & Butic Cadouri • Focșani</span>
                 <h1 class="fade-up delay-1">Aducem visele<br><span>la realitate</span></h1>
                 <p class="fade-up delay-2">Buchete create cu suflet, cadouri alese cu grijă și decoruri de poveste
-                    pentru evenimentele speciale din viața ta.</p>
+                    pentru momentele speciale din viața ta.</p>
                 <div class="hero-actions fade-up delay-2">
-                    <a href="#catalog" class="cta-button primary">Descoperă Catalogul</a>
+                    <a href="#catalog" class="cta-button primary">Explorează Catalogul</a>
                     <a href="#evenimente" class="cta-button secondary">Decor Evenimente</a>
-                    <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20s%C4%83%20comand%20flori%20sau%20un%20cadou."
-                        target="_blank" class="cta-button wa-hero">
-                        <span style="margin-right: 8px;">📱</span> Comandă pe WhatsApp
-                    </a>
                 </div>
             </div>
             <div class="scroll-indicator">
@@ -79,30 +71,30 @@
             <div class="section-container highlights-grid">
                 <div class="highlight-item">
                     <span class="highlight-icon">💐</span>
-                    <div>
-                        <strong>Flori Proaspete & Criogenate</strong>
-                        <small>Design unic la fiecare buchet</small>
+                    <div class="highlight-info">
+                        <strong>Flori Proaspete</strong>
+                        <small>Design floral unic</small>
                     </div>
                 </div>
                 <div class="highlight-item">
                     <span class="highlight-icon">🎁</span>
-                    <div>
+                    <div class="highlight-info">
                         <strong>Cadouri Speciale</strong>
-                        <small>Seturi caligrafie, genți & suveniruri</small>
+                        <small>Seturi alese cu rafinament</small>
                     </div>
                 </div>
                 <div class="highlight-item">
                     <span class="highlight-icon">🎈</span>
-                    <div>
+                    <div class="highlight-info">
                         <strong>Organizare Evenimente</strong>
-                        <small>Arcade baloane & photo corner</small>
+                        <small>Arcade & photo corner</small>
                     </div>
                 </div>
                 <div class="highlight-item">
                     <span class="highlight-icon">🚗</span>
-                    <div>
-                        <strong>Livrare în Focșani & Vrancea</strong>
-                        <small>Comenzi rapide pe WhatsApp</small>
+                    <div class="highlight-info">
+                        <strong>Livrare în Focșani</strong>
+                        <small>Comenzi rapide & sigure</small>
                     </div>
                 </div>
             </div>
@@ -114,26 +106,30 @@
                 <div class="section-header fade-in">
                     <span class="subtitle">Colecția Coquette</span>
                     <h2>Catalog de Produse & Cadouri</h2>
-                    <p>Fiecare creație este realizată manual cu atenție la cele mai mici detalii. Alege produsul dorit
-                        și comandă-l printr-un simplu mesaj pe WhatsApp!</p>
+                    <p>Fiecare creație este lucrată manual cu pasiune. Apasă pe oricare produs pentru a vedea detaliile
+                        și a comanda direct pe WhatsApp.</p>
                 </div>
 
-                <!-- Category Filters -->
-                <div class="filter-tabs fade-up">
-                    <button class="filter-btn active" data-filter="all">Toate Produsele</button>
-                    <button class="filter-btn" data-filter="buchete">Buchete & Flori</button>
-                    <button class="filter-btn" data-filter="cadouri">Cadouri Speciale</button>
-                    <button class="filter-btn" data-filter="nunta">Nuntă & Botez</button>
+                <!-- Category Filters (Horizontal scrollable on mobile) -->
+                <div class="filter-tabs-wrapper fade-up">
+                    <div class="filter-tabs">
+                        <button class="filter-btn active" data-filter="all">Toate Produsele</button>
+                        <button class="filter-btn" data-filter="buchete">Buchete & Flori</button>
+                        <button class="filter-btn" data-filter="cadouri">Cadouri Speciale</button>
+                        <button class="filter-btn" data-filter="nunta">Nuntă & Botez</button>
+                    </div>
                 </div>
 
                 <!-- Products Grid -->
                 <div class="grid-gallery" id="catalog-grid">
 
                     <!-- 1. Buchet Signature Coquette -->
-                    <div class="flower-card fade-up" data-category="buchete">
-                        <div class="img-wrapper" data-img="images/buchet-signature.jpeg"
-                            data-title="Buchet Signature Coquette"
-                            data-desc="Buchet spectaculos din trandafiri roșii catifelați, crini imperiali, floarea miresei și verdeață decorativă, ambalat în stilul semnătură Coquette.">
+                    <div class="flower-card fade-up" data-category="buchete"
+                        data-img="images/buchet-signature.jpeg"
+                        data-title="Buchet Signature Coquette"
+                        data-badge="Signature Coquette"
+                        data-desc="O creație de excepție marca Florăria Coquette. Buchetul reunește trandafiri roșii catifelați, boboci de crin imperial, accente de floarea miresei și verdeață nobilă într-un ambalaj roz pudrat de lux.">
+                        <div class="img-wrapper">
                             <span class="product-badge">Signature Coquette</span>
                             <img src="images/buchet-signature.jpeg" alt="Buchet Signature Coquette cu trandafiri și crini"
                                 loading="lazy">
@@ -141,21 +137,17 @@
                         <div class="card-content">
                             <h3>Buchet Signature Coquette</h3>
                             <p>Trandafiri roșii catifelați, crini imperiali & floarea miresei</p>
-                            <div class="card-actions">
-                                <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20s%C4%83%20comand%20sau%20s%C4%83%20aflu%20pre%C8%9Bul%20pentru%20produsul%20%22Buchet%20Signature%20Coquette%22."
-                                    target="_blank" class="btn-wa">Comandă pe WhatsApp</a>
-                                <button class="btn-details" data-title="Buchet Signature Coquette"
-                                    data-desc="O creație de excepție marca Florăria Coquette. Buchetul reunește trandafiri roșii de o calitate desăvârșită, boboci de crin imperial, accente delicate de floarea miresei și ambalaj roz pudrat de lux."
-                                    data-img="images/buchet-signature.jpeg">Detalii</button>
-                            </div>
+                            <button class="btn-card-action">Vezi Detalii & Comandă</button>
                         </div>
                     </div>
 
                     <!-- 2. Buchet Regal Love -->
-                    <div class="flower-card fade-up delay-1" data-category="buchete">
-                        <div class="img-wrapper" data-img="images/buchet-regal-love.jpeg"
-                            data-title="Buchet Regal „Love”"
-                            data-desc="Un aranjament generos și pasional din trandafiri roșii și albi, decorat cu floarea miresei și panglică satinată inscripționată cu 'LOVE'.">
+                    <div class="flower-card fade-up delay-1" data-category="buchete"
+                        data-img="images/buchet-regal-love.jpeg"
+                        data-title="Buchet Regal „Love”"
+                        data-badge="Colecția Love"
+                        data-desc="Un aranjament amplu și pasional din trandafiri bicolori (roșii și albi), învăluiți în floarea miresei și finalizați cu o panglică satinată roșie cu mesajul 'LOVE'.">
+                        <div class="img-wrapper">
                             <span class="product-badge">Colecția Love</span>
                             <img src="images/buchet-regal-love.jpeg" alt="Buchet Regal Love din trandafiri roșii și albi"
                                 loading="lazy">
@@ -163,21 +155,17 @@
                         <div class="card-content">
                             <h3>Buchet Regal „Love”</h3>
                             <p>Trandafiri roșii & albi, floarea miresei și panglică „Love”</p>
-                            <div class="card-actions">
-                                <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20s%C4%83%20comand%20produsul%20%22Buchet%20Regal%20Love%22."
-                                    target="_blank" class="btn-wa">Comandă pe WhatsApp</a>
-                                <button class="btn-details" data-title="Buchet Regal „Love”"
-                                    data-desc="Un gest de dragoste memorabil. Buchet amplu din trandafiri bicolori (roșu pasional și alb pur) completat armonios cu floarea miresei și accente de verdeață naturală."
-                                    data-img="images/buchet-regal-love.jpeg">Detalii</button>
-                            </div>
+                            <button class="btn-card-action">Vezi Detalii & Comandă</button>
                         </div>
                     </div>
 
                     <!-- 3. Buchet Armonie Pastel -->
-                    <div class="flower-card fade-up delay-2" data-category="buchete">
-                        <div class="img-wrapper" data-img="images/buchet-armonie-pastel.jpeg"
-                            data-title="Buchet „Armonie Pastel”"
-                            data-desc="Nuanțe diafane de roz pudrat, lavandă și alb: trandafiri selecționați, gerbera roz pastel, lisianthus mov și frunziș exotic luxuriant.">
+                    <div class="flower-card fade-up delay-2" data-category="buchete"
+                        data-img="images/buchet-armonie-pastel.jpeg"
+                        data-title="Buchet „Armonie Pastel”"
+                        data-badge="Pastel Elegance"
+                        data-desc="O compoziție luminoasă și proaspătă din trandafiri roz și ivoire, gerbera delicată, lisianthus violet și verdeață exotică proaspătă. Ideal pentru zile de naștere sau surprize speciale.">
+                        <div class="img-wrapper">
                             <span class="product-badge">Pastel Elegance</span>
                             <img src="images/buchet-armonie-pastel.jpeg" alt="Buchet Armonie Pastel cu gerbera și trandafiri"
                                 loading="lazy">
@@ -185,21 +173,17 @@
                         <div class="card-content">
                             <h3>Buchet „Armonie Pastel”</h3>
                             <p>Trandafiri roz & ivoire, gerbera delicată și lisianthus violet</p>
-                            <div class="card-actions">
-                                <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20s%C4%83%20comand%20produsul%20%22Buchet%20Armonie%20Pastel%22."
-                                    target="_blank" class="btn-wa">Comandă pe WhatsApp</a>
-                                <button class="btn-details" data-title="Buchet „Armonie Pastel”"
-                                    data-desc="Un buchet proaspăt și luminos, ideal pentru aniversări, zile onomastice sau surprize neașteptate. Realizat din flori proaspete în tonuri calde și primitoare."
-                                    data-img="images/buchet-armonie-pastel.jpeg">Detalii</button>
-                            </div>
+                            <button class="btn-card-action">Vezi Detalii & Comandă</button>
                         </div>
                     </div>
 
                     <!-- 4. Cutie Catifea Ruby Elegance -->
-                    <div class="flower-card fade-up" data-category="buchete">
-                        <div class="img-wrapper" data-img="images/aranjament-cutie-catifea.jpeg"
-                            data-title="Cutie Catifea „Ruby Elegance”"
-                            data-desc="Aranjament floral spectaculos realizat într-o cutie rotundă din catifea bordo, cu gerbere albe, trandafiri roșii și galbeni, floarea miresei și eucalipt.">
+                    <div class="flower-card fade-up" data-category="buchete"
+                        data-img="images/aranjament-cutie-catifea.jpeg"
+                        data-title="Cutie Catifea „Ruby Elegance”"
+                        data-badge="Flower Box"
+                        data-desc="Aranjament floral rafinat într-o cutie rotundă din catifea bordo. Include gerbere albe, trandafiri roșii și galbeni, floarea miresei și eucalipt parfumat pe burete umed profesional.">
+                        <div class="img-wrapper">
                             <span class="product-badge">Flower Box</span>
                             <img src="images/aranjament-cutie-catifea.jpeg" alt="Cutie din catifea bordo cu flori aranjate"
                                 loading="lazy">
@@ -207,299 +191,241 @@
                         <div class="card-content">
                             <h3>Cutie Catifea „Ruby Elegance”</h3>
                             <p>Cutie bordo din catifea, gerbere albe, trandafiri & eucalipt</p>
-                            <div class="card-actions">
-                                <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20s%C4%83%20comand%20produsul%20%22Cutie%20Catifea%20Ruby%20Elegance%22."
-                                    target="_blank" class="btn-wa">Comandă pe WhatsApp</a>
-                                <button class="btn-details" data-title="Cutie Catifea „Ruby Elegance”"
-                                    data-desc="Eleganță într-o cutie de lux din catifea fină. Florile sunt hidratate continuu în burete floral profesional, oferind prospețime de lungă durată fără necesitatea unei vaze."
-                                    data-img="images/aranjament-cutie-catifea.jpeg">Detalii</button>
-                            </div>
+                            <button class="btn-card-action">Vezi Detalii & Comandă</button>
                         </div>
                     </div>
 
                     <!-- 5. Set Șampanie & Pahare Personalizate -->
-                    <div class="flower-card fade-up delay-1" data-category="cadouri">
-                        <div class="img-wrapper" data-img="images/cadou-sampanie-pahare.jpeg"
-                            data-title="Set Festiv Șampanie & Pahare"
-                            data-desc="Set decorat manual pentru sărbători de familie, nuntă sau aniversare: sticlă șampanie texturată cu mesaj ('Cea mai mare binecuvântare...') și pahare 'Cea mai bună soție' & 'Cel mai bun soț'.">
+                    <div class="flower-card fade-up delay-1" data-category="cadouri"
+                        data-img="images/cadou-sampanie-pahare.jpeg"
+                        data-title="Set Festiv Șampanie & Pahare"
+                        data-badge="Cadou Personalizat"
+                        data-desc="Set aniversar decorat manual: sticlă de șampanie texturată cu mesaj ('Cea mai mare binecuvântare...') și două pahare asortate inscripționate ('Cea mai bună soție' & 'Cel mai bun soț').">
+                        <div class="img-wrapper">
                             <span class="product-badge">Cadou Personalizat</span>
-                            <img src="images/cadou-sampanie-pahare.jpeg" alt="Set șampanie și pahare personalizate pentru soț și soție"
+                            <img src="images/cadou-sampanie-pahare.jpeg" alt="Set șampanie și pahare personalizate"
                                 loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Set Șampanie & Pahare de Sărbătoare</h3>
                             <p>Sticlă finisată manual și 2 pahare cu mesaje speciale de familie</p>
-                            <div class="card-actions">
-                                <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20s%C4%83%20comand%20produsul%20%22Set%20Festiv%20%C8%98ampanie%20%C8%99i%20Pahare%22."
-                                    target="_blank" class="btn-wa">Comandă pe WhatsApp</a>
-                                <button class="btn-details" data-title="Set Festiv Șampanie & Pahare"
-                                    data-desc="Cadoul perfect pentru o aniversare de căsătorie, nuntă sau un cadou emoționant pentru părinți și nași. Include sticlă șampanie îmbrăcată în textură fină sidefată și două pahare cu fundițe satinat-verzi."
-                                    data-img="images/cadou-sampanie-pahare.jpeg">Detalii</button>
-                            </div>
+                            <button class="btn-card-action">Vezi Detalii & Comandă</button>
                         </div>
                     </div>
 
                     <!-- 6. Set Caligrafie Vintage Steampunk -->
-                    <div class="flower-card fade-up delay-2" data-category="cadouri">
-                        <div class="img-wrapper" data-img="images/cadou-caligrafie-steampunk.jpeg"
-                            data-title="Set Caligrafie Vintage Steampunk"
-                            data-desc="Set cadou de colecție cu toc și peniță din pană naturală turcoaz ornată cu roți dințate aurii steampunk, sigiliu cu ceară, călimară cu cerneală și lumânare.">
+                    <div class="flower-card fade-up delay-2" data-category="cadouri"
+                        data-img="images/cadou-caligrafie-steampunk.jpeg"
+                        data-title="Set Caligrafie Vintage Steampunk"
+                        data-badge="Cadou Exclusivist"
+                        data-desc="Set de colecție pentru scrisori cu pană de caligrafie turcoaz, mecanisme aurite steampunk, sigiliu de ceară cu mâner vintage, baton de ceară aurie, călimară cu cerneală și penițe de schimb.">
+                        <div class="img-wrapper">
                             <span class="product-badge">Cadou Exclusivist</span>
-                            <img src="images/cadou-caligrafie-steampunk.jpeg" alt="Set caligrafie vintage peniță turcoaz cu sigiliu de ceară"
+                            <img src="images/cadou-caligrafie-steampunk.jpeg" alt="Set caligrafie vintage peniță turcoaz"
                                 loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Set Caligrafie Vintage Steampunk</h3>
                             <p>Pană caligrafie turcoaz, sigiliu din ceară aurie, călimară & accesorii</p>
-                            <div class="card-actions">
-                                <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20s%C4%83%20comand%20produsul%20%22Set%20Caligrafie%20Vintage%20Steampunk%22."
-                                    target="_blank" class="btn-wa">Comandă pe WhatsApp</a>
-                                <button class="btn-details" data-title="Set Caligrafie Vintage Steampunk"
-                                    data-desc="Pentru pasionații de rafinament clasic și scris de mână. Pachet complet livrat în cutie de prezentare aurită, ce include pană de gâscă turcoaz decorată cu motive steampunk, 5 penițe de schimb, linguriță pentru topit ceara, baton de ceară aurie, călimară cu cerneală și suport."
-                                    data-img="images/cadou-caligrafie-steampunk.jpeg">Detalii</button>
-                            </div>
+                            <button class="btn-card-action">Vezi Detalii & Comandă</button>
                         </div>
                     </div>
 
-                    <!-- 7. Set Caligrafie & Cuțit Scrisori Regal -->
-                    <div class="flower-card fade-up" data-category="cadouri">
-                        <div class="img-wrapper" data-img="images/cadou-caligrafie-regal.jpeg"
-                            data-title="Set Caligrafie & Toc Regal"
-                            data-desc="Set caligrafic nobil cu toc din lemn natural, pană de scris maro ciocolatiu, desfăcător de scrisori metalic cu crin regal Fleur-de-lis și sigiliu din ceară aurie.">
+                    <!-- 7. Set Caligrafie & Toc Regal -->
+                    <div class="flower-card fade-up" data-category="cadouri"
+                        data-img="images/cadou-caligrafie-regal.jpeg"
+                        data-title="Set Caligrafie & Toc Regal"
+                        data-badge="Colecția Retro"
+                        data-desc="Set caligrafic nobil cu toc din lemn natural, pană de scris maro ciocolatiu, desfăcător de scrisori cu crin regal Fleur-de-lis și sigiliu din ceară aurie.">
+                        <div class="img-wrapper">
                             <span class="product-badge">Colecția Retro</span>
-                            <img src="images/cadou-caligrafie-regal.jpeg" alt="Set caligrafie regal cu toc de lemn și cuțit de corespondență"
+                            <img src="images/cadou-caligrafie-regal.jpeg" alt="Set caligrafie regal cu toc de lemn"
                                 loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Set Caligrafie & Toc Regal</h3>
                             <p>Pană naturală, toc din lemn fin, cuțit scrisori Fleur-de-lis & ceară</p>
-                            <div class="card-actions">
-                                <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20s%C4%83%20comand%20produsul%20%22Set%20Caligrafie%20%C8%99i%20Toc%20Regal%22."
-                                    target="_blank" class="btn-wa">Comandă pe WhatsApp</a>
-                                <button class="btn-details" data-title="Set Caligrafie & Toc Regal"
-                                    data-desc="Un cadou distins pentru profesori, medici, colegi sau persoane dragi cu gusturi alese. Setul conține două instrumente de scris (pană și toc de lemn), cuțit artistic de corespondență, 5 penițe de caligrafie și ceară pentru sigilii."
-                                    data-img="images/cadou-caligrafie-regal.jpeg">Detalii</button>
-                            </div>
+                            <button class="btn-card-action">Vezi Detalii & Comandă</button>
                         </div>
                     </div>
 
                     <!-- 8. Geantă Luxury Bleu Ciel -->
-                    <div class="flower-card fade-up delay-1" data-category="cadouri">
-                        <div class="img-wrapper" data-img="images/cadou-geanta-bleu.jpeg"
-                            data-title="Geantă Damă „Bleu Ciel Elegance”"
-                            data-desc="Geantă de damă confecționată din piele texturată de calitate premium, într-o nuanță diafană de bleu pastel, accesorizată cu cataramă aurie și eșarfă mătăsoasă.">
+                    <div class="flower-card fade-up delay-1" data-category="cadouri"
+                        data-img="images/cadou-geanta-bleu.jpeg"
+                        data-title="Geantă Damă „Bleu Ciel Elegance”"
+                        data-badge="Accesorii Premium"
+                        data-desc="Geantă elegantă din piele texturată bleu pastel, completată cu feronerie metalică aurie și eșarfă decorativă din mătase. Un cadou minunat ce completează perfect un buchet de flori.">
+                        <div class="img-wrapper">
                             <span class="product-badge">Accesorii Premium</span>
-                            <img src="images/cadou-geanta-bleu.jpeg" alt="Geantă damă piele bleu ciel cu eșarfă mătase"
+                            <img src="images/cadou-geanta-bleu.jpeg" alt="Geantă damă piele bleu ciel"
                                 loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Geantă Damă „Bleu Ciel”</h3>
                             <p>Piele texturată fină, închizătoare aurie și eșarfă satinată</p>
-                            <div class="card-actions">
-                                <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20s%C4%83%20comand%20produsul%20%22Geant%C4%83%20Dam%C4%83%20Bleu%20Ciel%22."
-                                    target="_blank" class="btn-wa">Comandă pe WhatsApp</a>
-                                <button class="btn-details" data-title="Geantă Damă „Bleu Ciel Elegance”"
-                                    data-desc="O piesă vestimentară versatilă și sofisticată, ideală alături de un buchet de flori Coquette pentru un cadou complet de neuitat. Piele rezistentă, finisaje impecabile și accesorizare chic."
-                                    data-img="images/cadou-geanta-bleu.jpeg">Detalii</button>
-                            </div>
+                            <button class="btn-card-action">Vezi Detalii & Comandă</button>
                         </div>
                     </div>
 
                     <!-- 9. Geantă Luxury Noir Chic -->
-                    <div class="flower-card fade-up delay-2" data-category="cadouri">
-                        <div class="img-wrapper" data-img="images/cadou-geanta-black.jpeg"
-                            data-title="Geantă Luxury „Noir Chic”"
-                            data-desc="Geantă din piele neagră granulată de calitate superioară, siluetă modernă trapezoidală, toartă ergonomică cu finisaj auriu și eșarfă din mătase imprimată.">
+                    <div class="flower-card fade-up delay-2" data-category="cadouri"
+                        data-img="images/cadou-geanta-black.jpeg"
+                        data-title="Geantă Luxury „Noir Chic”"
+                        data-badge="Accesorii Premium"
+                        data-desc="Geantă structurată din piele neagră granulată, accente metalice aurii și eșarfă satinată cu imprimeu de colecție. Rafinată și atemporală.">
+                        <div class="img-wrapper">
                             <span class="product-badge">Accesorii Premium</span>
-                            <img src="images/cadou-geanta-black.jpeg" alt="Geantă luxury piele neagră cu eșarfă decorativă"
+                            <img src="images/cadou-geanta-black.jpeg" alt="Geantă luxury piele neagră"
                                 loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Geantă Luxury „Noir Chic”</h3>
                             <p>Piele neagră granulată, accente aurii și eșarfă mătăsoasă</p>
-                            <div class="card-actions">
-                                <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20s%C4%83%20comand%20produsul%20%22Geant%C4%83%20Luxury%20Noir%20Chic%22."
-                                    target="_blank" class="btn-wa">Comandă pe WhatsApp</a>
-                                <button class="btn-details" data-title="Geantă Luxury „Noir Chic”"
-                                    data-desc="Eleganță atemporală în culoarea neagră. Un accesoriu premium ce completează orice ținută de zi sau de seară, ambalată impecabil pentru a fi dăruită."
-                                    data-img="images/cadou-geanta-black.jpeg">Detalii</button>
-                            </div>
+                            <button class="btn-card-action">Vezi Detalii & Comandă</button>
                         </div>
                     </div>
 
                     <!-- 10. Aranjament Tematic Absolvire -->
-                    <div class="flower-card fade-up" data-category="cadouri">
-                        <div class="img-wrapper" data-img="images/cadou-absolvire-ursulet.jpeg"
-                            data-title="Aranjament Carte Absolvire"
-                            data-desc="Cadou simbolic dedicat absolvirii: carte suport deschisă bogată în flori pastelate și ursuleț de pluș simpatic purtând toca de absolvent.">
+                    <div class="flower-card fade-up" data-category="cadouri"
+                        data-img="images/cadou-absolvire-ursulet.jpeg"
+                        data-title="Aranjament Carte Absolvire"
+                        data-badge="Absolvire & Succes"
+                        data-desc="Surpriză simbolică pentru absolvirea școlii, liceului sau facultății: suport în formă de carte deschisă cu flori diafane și ursuleț de pluș purtând toca academică.">
+                        <div class="img-wrapper">
                             <span class="product-badge">Absolvire & Succes</span>
-                            <img src="images/cadou-absolvire-ursulet.jpeg" alt="Aranjament floral în formă de carte cu ursuleț absolvent"
+                            <img src="images/cadou-absolvire-ursulet.jpeg" alt="Aranjament floral carte absolvire cu ursuleț"
                                 loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Aranjament „Carte de Absolvire”</h3>
                             <p>Flori diafane într-o carte deschisă cu ursuleț absolvent cu tocă</p>
-                            <div class="card-actions">
-                                <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20s%C4%83%20comand%20produsul%20%22Aranjament%20Carte%20Absolvire%22."
-                                    target="_blank" class="btn-wa">Comandă pe WhatsApp</a>
-                                <button class="btn-details" data-title="Aranjament „Carte de Absolvire”"
-                                    data-desc="O surpriză memorabilă pentru festivitățile de sfârșit de an școlar, liceu sau facultate. Combinația dintre flori, perle și ursulețul absolvent aduce lacrimi de bucurie oricărui sărbătorit."
-                                    data-img="images/cadou-absolvire-ursulet.jpeg">Detalii</button>
-                            </div>
+                            <button class="btn-card-action">Vezi Detalii & Comandă</button>
                         </div>
                     </div>
 
                     <!-- 11. Tablou Basorelief Cina cea de Taină -->
-                    <div class="flower-card fade-up delay-1" data-category="cadouri">
-                        <div class="img-wrapper" data-img="images/cadou-tablou-cina.jpeg"
-                            data-title="Tablou Basorelief „Cina cea de Taină”"
-                            data-desc="Piesă religioasă și decorativă de o finețe excepțională, redând scena biblică Cina cea de Taină în relief tridimensional cu accente de aur și argint, încastrată în ramă sculptată barocă.">
+                    <div class="flower-card fade-up delay-1" data-category="cadouri"
+                        data-img="images/cadou-tablou-cina.jpeg"
+                        data-title="Tablou Basorelief „Cina cea de Taină”"
+                        data-badge="Artă & Spiritualitate"
+                        data-desc="Piesă religioasă și decorativă cu scena biblică Cina cea de Taină realizată în relief 3D, finisată în nuanțe strălucitoare de aur și argint, încastrată într-o ramă barocă sculptată.">
+                        <div class="img-wrapper">
                             <span class="product-badge">Artă & Spiritualitate</span>
-                            <img src="images/cadou-tablou-cina.jpeg" alt="Tablou basorelief Cina cea de Taină finisaje aur și argint"
+                            <img src="images/cadou-tablou-cina.jpeg" alt="Tablou basorelief Cina cea de Taină"
                                 loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Basorelief „Cina cea de Taină”</h3>
                             <p>Icoană în relief tridimensional cu accente de aur, argint & ramă barocă</p>
-                            <div class="card-actions">
-                                <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20s%C4%83%20comand%20produsul%20%22Basorelief%20Cina%20cea%20de%20Tain%C4%83%22."
-                                    target="_blank" class="btn-wa">Comandă pe WhatsApp</a>
-                                <button class="btn-details" data-title="Basorelief „Cina cea de Taină”"
-                                    data-desc="Un dar de suflet și o binecuvântare pentru orice cămin. Lucrat cu atenție desăvârșită la expresivitatea figurilor și detaliile arhitecturale, ideal pentru casă nouă, nuntă sau sărbători sfinte."
-                                    data-img="images/cadou-tablou-cina.jpeg">Detalii</button>
-                            </div>
+                            <button class="btn-card-action">Vezi Detalii & Comandă</button>
                         </div>
                     </div>
 
                     <!-- 12. Statuetă Buddha & Plăci de Ardezie -->
-                    <div class="flower-card fade-up delay-2" data-category="cadouri">
-                        <div class="img-wrapper" data-img="images/cadou-buddha-ardezie.jpeg"
-                            data-title="Statuetă Buddha & Plăci Ardezie"
-                            data-desc="Statuetă decorativă Buddha în mantie aurită brodată și plăci din ardezie naturală cu mesaje emoționante de recunoștință ('Pentru cei mai buni Nași', 'Credință, Speranță, Dragoste').">
+                    <div class="flower-card fade-up delay-2" data-category="cadouri"
+                        data-img="images/cadou-buddha-ardezie.jpeg"
+                        data-title="Statuetă Buddha & Plăci Ardezie"
+                        data-badge="Decor & Mesaje"
+                        data-desc="Piese de decor pentru cămin: statuetă Buddha aurită în poziție de meditație și plăci din piatră naturală de ardezie cu mesaje de recunoștință pentru nași și familie.">
+                        <div class="img-wrapper">
                             <span class="product-badge">Decor & Mesaje</span>
-                            <img src="images/cadou-buddha-ardezie.jpeg" alt="Statuetă Buddha aurie și plăci ardezie personalizate cu mesaje"
+                            <img src="images/cadou-buddha-ardezie.jpeg" alt="Statuetă Buddha aurie și plăci ardezie"
                                 loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Statuetă Buddha & Plăci Ardezie</h3>
-                            <p>Statuetă Buddha aurită & plăci din piatră de ardezie cu mesaje de suflet</p>
-                            <div class="card-actions">
-                                <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20s%C4%83%20comand%20produsul%20%22Statuet%C4%83%20Buddha%20%C8%99i%20Pl%C4%83ci%20Ardezie%22."
-                                    target="_blank" class="btn-wa">Comandă pe WhatsApp</a>
-                                <button class="btn-details" data-title="Statuetă Buddha & Plăci Ardezie"
-                                    data-desc="Piese decorative ce aduc liniște, echilibru și căldură sufletească în casă. Plăcile din ardezie naturală pot fi dăruite nașilor de botez sau cununie ca semn de profund respect."
-                                    data-img="images/cadou-buddha-ardezie.jpeg">Detalii</button>
-                            </div>
+                            <p>Statuetă Buddha aurită & plăci din ardezie cu mesaje de suflet</p>
+                            <button class="btn-card-action">Vezi Detalii & Comandă</button>
                         </div>
                     </div>
 
                     <!-- 13. Buchet Mireasă Criogenat Eternitate -->
-                    <div class="flower-card fade-up" data-category="nunta">
-                        <div class="img-wrapper" data-img="images/buchet-mireasa-eternitate.jpeg"
-                            data-title="Buchet Mireasă „Eternitate”"
-                            data-desc="Buchet sferic de mireasă sau nașă realizat manual din flori criogenate și uscate, cu trandafiri roșii catifelați, trandafiri ivoire și mii de steluțe florale nemuritoare.">
+                    <div class="flower-card fade-up" data-category="nunta"
+                        data-img="images/buchet-mireasa-eternitate.jpeg"
+                        data-title="Buchet Mireasă „Eternitate”"
+                        data-badge="Nuntă • Flori Criogenate"
+                        data-desc="Buchet sferic de mireasă realizat exclusiv din flori uscate și stabilizate criogenate (trandafiri roșii și bej). O amintire prețioasă care își păstrează frumusețea ani de zile fără apă.">
+                        <div class="img-wrapper">
                             <span class="product-badge">Nuntă • Flori Criogenate</span>
-                            <img src="images/buchet-mireasa-eternitate.jpeg" alt="Buchet sferic de mireasă din flori criogenate și uscate"
+                            <img src="images/buchet-mireasa-eternitate.jpeg" alt="Buchet sferic de mireasă din flori criogenate"
                                 loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Buchet Mireasă „Eternitate”</h3>
                             <p>Flori criogenate și uscate, trandafiri roșii & ivoire ce nu se ofilesc</p>
-                            <div class="card-actions">
-                                <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20s%C4%83%20comand%20produsul%20%22Buchet%20Mireas%C4%83%20Eternitate%22."
-                                    target="_blank" class="btn-wa">Comandă pe WhatsApp</a>
-                                <button class="btn-details" data-title="Buchet Mireasă „Eternitate”"
-                                    data-desc="Un buchet care rămâne la fel de spectaculos pentru totdeauna! Creat cu măiestrie din flori stabilizate și criogenate, este o amintire vie și emoționantă din ziua nunții tale."
-                                    data-img="images/buchet-mireasa-eternitate.jpeg">Detalii</button>
-                            </div>
+                            <button class="btn-card-action">Vezi Detalii & Comandă</button>
                         </div>
                     </div>
 
                     <!-- 14. Set Nuntă Boho Chic -->
-                    <div class="flower-card fade-up delay-1" data-category="nunta">
-                        <div class="img-wrapper" data-img="images/set-nunta-boho.jpeg"
-                            data-title="Set Nuntă Boho Chic"
-                            data-desc="Set complet pentru cununie: buchet de mireasă din flori uscate în nuanțe calde de teracotă, crem și bej pufos, însoțit de cocardă / floare de rever asortată pentru mire.">
+                    <div class="flower-card fade-up delay-1" data-category="nunta"
+                        data-img="images/set-nunta-boho.jpeg"
+                        data-title="Set Nuntă Boho Chic „Terracotta”"
+                        data-badge="Set Mireasă & Mire"
+                        data-desc="Set armonios pentru nuntă sau cununie: buchet de mireasă din flori uscate în nuanțe calde de teracotă, crem și lagurus, însoțit de floarea de rever (cocardă) asortată pentru mire.">
+                        <div class="img-wrapper">
                             <span class="product-badge">Set Mireasă & Mire</span>
-                            <img src="images/set-nunta-boho.jpeg" alt="Set nuntă boho chic buchet flori uscate și cocardă mire"
+                            <img src="images/set-nunta-boho.jpeg" alt="Set nuntă boho chic buchet și cocardă"
                                 loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Set Nuntă Boho Chic „Terracotta”</h3>
                             <p>Buchet mireasă din flori uscate & cocardă de rever asortată mire</p>
-                            <div class="card-actions">
-                                <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20s%C4%83%20comand%20produsul%20%22Set%20Nunt%C4%83%20Boho%20Chic%22."
-                                    target="_blank" class="btn-wa">Comandă pe WhatsApp</a>
-                                <button class="btn-details" data-title="Set Nuntă Boho Chic „Terracotta”"
-                                    data-desc="Stilul boho este cel mai apreciat trend floral! Florile uscate naturale și lagurusul pufos în tonuri calde de pământ și trandafir pudrat creează o armonie estetică de vis pentru fotografiile de nuntă."
-                                    data-img="images/set-nunta-boho.jpeg">Detalii</button>
-                            </div>
+                            <button class="btn-card-action">Vezi Detalii & Comandă</button>
                         </div>
                     </div>
 
                     <!-- 15. Coroniță Florală Serenity Blue -->
-                    <div class="flower-card fade-up delay-2" data-category="nunta">
-                        <div class="img-wrapper" data-img="images/coronita-albastra.jpeg"
-                            data-title="Coroniță Florală „Serenity Blue”"
-                            data-desc="Coroniță delicată pentru botez sau cununie, realizată din flori bleu diafane, floricele albe și verdeață proaspătă, expusă pe suport metalic decorativ.">
+                    <div class="flower-card fade-up delay-2" data-category="nunta"
+                        data-img="images/coronita-albastra.jpeg"
+                        data-title="Coroniță Florală „Serenity Blue”"
+                        data-badge="Accesorii Evenimente"
+                        data-desc="Coroniță delicată pentru botez sau cununie civilă, lucrată manual din flori bleu diafane și verdeață fină pe suport comod și flexibil.">
+                        <div class="img-wrapper">
                             <span class="product-badge">Accesorii Evenimente</span>
-                            <img src="images/coronita-albastra.jpeg" alt="Coroniță de flori bleu și verdeață pentru botez sau nuntă"
+                            <img src="images/coronita-albastra.jpeg" alt="Coroniță florală albastră pentru botez sau nuntă"
                                 loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Coroniță „Serenity Blue”</h3>
                             <p>Coroniță împletită fin cu flori albastru-azur și verdeață delicată</p>
-                            <div class="card-actions">
-                                <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20s%C4%83%20comand%20produsul%20%22Coroni%C8%9B%C4%83%20Serenity%20Blue%22."
-                                    target="_blank" class="btn-wa">Comandă pe WhatsApp</a>
-                                <button class="btn-details" data-title="Coroniță „Serenity Blue”"
-                                    data-desc="Accesoriu deosebit pentru fetițe la botez, domnișoare de onoare sau ședințe foto de familie. Realizată manual pe suport flexibil și comod."
-                                    data-img="images/coronita-albastra.jpeg">Detalii</button>
-                            </div>
+                            <button class="btn-card-action">Vezi Detalii & Comandă</button>
                         </div>
                     </div>
 
                     <!-- 16. Coroniță Florală Pure Innocence -->
-                    <div class="flower-card fade-up" data-category="nunta">
-                        <div class="img-wrapper" data-img="images/coronita-alba.jpeg"
-                            data-title="Coroniță Florală „Pure Innocence”"
-                            data-desc="Coroniță fină împletită cu flori albe imaculate și frunzulițe verzi naturale, ideală pentru mireasă, prima împărtășanie, botez sau serbări festive.">
+                    <div class="flower-card fade-up" data-category="nunta"
+                        data-img="images/coronita-alba.jpeg"
+                        data-title="Coroniță Florală „Pure Innocence”"
+                        data-badge="Accesorii Evenimente"
+                        data-desc="Coroniță din flori albe imaculate și frunze naturale verzi. Simbol al purității, ideală pentru mireasă, prima împărtășanie sau botez.">
+                        <div class="img-wrapper">
                             <span class="product-badge">Accesorii Evenimente</span>
-                            <img src="images/coronita-alba.jpeg" alt="Coroniță de flori albe și frunze naturale verzi"
+                            <img src="images/coronita-alba.jpeg" alt="Coroniță flori albe și verdeață"
                                 loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Coroniță „Pure Innocence”</h3>
                             <p>Coroniță din flori albe imaculate și accente verzi proaspete</p>
-                            <div class="card-actions">
-                                <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20s%C4%83%20comand%20produsul%20%22Coroni%C8%9B%C4%83%20Pure%20Innocence%22."
-                                    target="_blank" class="btn-wa">Comandă pe WhatsApp</a>
-                                <button class="btn-details" data-title="Coroniță „Pure Innocence”"
-                                    data-desc="Simbol al purității și gingășiei. Poate fi personalizată în funcție de dimensiune și preferințele dumneavoastră cromatice."
-                                    data-img="images/coronita-alba.jpeg">Detalii</button>
-                            </div>
+                            <button class="btn-card-action">Vezi Detalii & Comandă</button>
                         </div>
                     </div>
 
                     <!-- 17. Aranjament Coroană Memorială -->
-                    <div class="flower-card fade-up delay-1" data-category="buchete">
-                        <div class="img-wrapper" data-img="images/aranjament-coroana.jpeg"
-                            data-title="Coroană Florală „Pioasă Amintire”"
-                            data-desc="Coroană rotundă clasică realizată cu respect din crizanteme albe bogate, crini regali, dalii mov și verdeață nobilă.">
+                    <div class="flower-card fade-up delay-1" data-category="buchete"
+                        data-img="images/aranjament-coroana.jpeg"
+                        data-title="Coroană Florală „Pioasă Amintire”"
+                        data-badge="Aranjamente Comemorative"
+                        data-desc="Coroană rotundă clasică realizată cu respect din crizanteme albe bogate, crini regali, dalii mov și verdeață nobilă pe burete umed rezistent.">
+                        <div class="img-wrapper">
                             <span class="product-badge">Aranjamente Comemorative</span>
-                            <img src="images/aranjament-coroana.jpeg" alt="Coroană rotundă din flori proaspete albe și mov"
+                            <img src="images/aranjament-coroana.jpeg" alt="Coroană rotundă din flori proaspete"
                                 loading="lazy">
                         </div>
                         <div class="card-content">
                             <h3>Coroană „Pioasă Amintire”</h3>
                             <p>Aranjament rotund din crizanteme albe, crini și flori mov/bordo</p>
-                            <div class="card-actions">
-                                <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20s%C4%83%20comand%20produsul%20%22Coroan%C4%83%20Pioas%C4%83%20Amintire%22."
-                                    target="_blank" class="btn-wa">Comandă pe WhatsApp</a>
-                                <button class="btn-details" data-title="Coroană „Pioasă Amintire”"
-                                    data-desc="Un omagiu floral discret și demn pentru momentele de rămas bun. Realizată pe suport cu burete umed pentru rezistență îndelungată."
-                                    data-img="images/aranjament-coroana.jpeg">Detalii</button>
-                            </div>
+                            <button class="btn-card-action">Vezi Detalii & Comandă</button>
                         </div>
                     </div>
 
@@ -508,13 +434,12 @@
                 <!-- Custom Order Callout -->
                 <div class="catalog-callout fade-up">
                     <div class="callout-text">
-                        <h3>Vrei un buchet sau un cadou personalizat?</h3>
-                        <p>Ai o idee specifică sau un buget anume? Spune-ne pe WhatsApp florile sau culorile preferate,
-                            iar noi vom crea aranjamentul perfect pentru tine!</p>
+                        <h3>Dorești un aranjament sau cadou personalizat?</h3>
+                        <p>Ai o idee anume sau un buget stabilit? Spune-ne florile sau culorile preferate, iar noi le
+                            transformăm în realitate.</p>
                     </div>
-                    <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20o%20comand%C4%83%20personalizat%C4%83%20de%20buchet%20sau%20cadou."
-                        target="_blank" class="cta-button primary">
-                        💬 Creează Comandă Personalizată
+                    <a href="#contact" class="cta-button primary">
+                        Contactează Atelierul
                     </a>
                 </div>
             </div>
@@ -526,89 +451,94 @@
                 <div class="section-header fade-in">
                     <span class="subtitle">Magie la Fiecare Petrecere</span>
                     <h2>Organizare & Decor Evenimente</h2>
-                    <p>Transformăm orice locație într-un decor spectaculos de poveste: botezuri, majorate de 18 ani,
-                        aniversări de 50 de ani, nunți și evenimente corporate în Focșani și județul Vrancea.</p>
+                    <p>Creăm decoruri de poveste pentru botezuri, majorate, aniversări și nunți în Focșani și județul
+                        Vrancea. Apasă pe oricare decor pentru a-l vizualiza în detaliu.</p>
                 </div>
 
-                <!-- Events Showcase Grid -->
+                <!-- Events Showcase Grid (Clean & Clickable without redundant buttons) -->
                 <div class="events-grid">
 
                     <!-- Event 1: Majorat 18 Ani -->
-                    <div class="event-card fade-up">
-                        <div class="event-img-wrap" data-img="images/eveniment-majorat-18.jpeg"
-                            data-title="Decor Majorat 18 Ani „Miruna”"
-                            data-desc="Decor outdoor spectaculos pentru majorat cu cifre volumetrice luminoase '18', panou circular personalizat și nori organici din baloane cromate în nuanțe de prună, blush, alb și șampanie.">
+                    <div class="event-card fade-up"
+                        data-img="images/eveniment-majorat-18.jpeg"
+                        data-title="Decor Majorat 18 Ani „Sweet 18”"
+                        data-badge="Majorat • 18 Ani"
+                        data-desc="Decor festiv spectaculos pentru majorat cu cifre volumetrice luminoase '18', panou circular personalizat și nori organici din baloane cromate în nuanțe elegante de prună, blush, alb și șampanie.">
+                        <div class="event-img-wrap">
                             <span class="event-badge">Majorat • 18 Ani</span>
-                            <img src="images/eveniment-majorat-18.jpeg" alt="Decor aniversare 18 ani cu cifre volumetrice luminoase și baloane"
+                            <img src="images/eveniment-majorat-18.jpeg" alt="Decor aniversare 18 ani cu cifre luminoase și baloane"
                                 loading="lazy">
                         </div>
                         <div class="event-info">
                             <h3>Majorat de Vis „Sweet 18”</h3>
-                            <p class="event-desc">Cifre volumetrice luminoase gigantice, panou personalizat cu nume și
-                                ghirlande organice de baloane în nuanțe cromate spectaculoase.</p>
+                            <p class="event-desc">Cifre volumetrice luminoase gigantice, panou foto circular personalizat
+                                și ghirlande organice de baloane în nuanțe cromate spectaculoase.</p>
                             <ul class="event-features-list">
                                 <li>✨ Cifre volumetrice 3D iluminate</li>
-                                <li>🎈 Aranjament asimetric baloane cromate</li>
-                                <li>🎯 Panou foto circular personalizat</li>
+                                <li>🎈 Baloane cromate rezistente interior/exterior</li>
+                                <li>🎯 Panou foto circular cu nume</li>
                             </ul>
-                            <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20o%20ofert%C4%83%20pentru%20decor%20Majorat%20(18%20ani)."
-                                target="_blank" class="btn-event-wa">Cere Ofertă Majorat</a>
+                            <span class="event-tap-hint">Apasă pentru detalii & foto mărită →</span>
                         </div>
                     </div>
 
                     <!-- Event 2: Aniversare 50 Ani Gold -->
-                    <div class="event-card fade-up delay-1">
-                        <div class="event-img-wrap" data-img="images/eveniment-aniversare-50.jpeg"
-                            data-title="Jubileu „Gold 50” Elegance"
-                            data-desc="Decor festiv opulent cu panou circular catifelat, cifra 50 aurită, baloane cromate aurii și crem cald, îmbinate elegant cu frunze de palmier aurite.">
+                    <div class="event-card fade-up delay-1"
+                        data-img="images/eveniment-aniversare-50.jpeg"
+                        data-title="Jubileu „Gold 50” Elegance"
+                        data-badge="Jubileu • 50 Ani"
+                        data-desc="Decor aniversar opulent în nuanțe calde de auriu metalizat și crem: panou circular catifelat, cifra 50 aurită, arcade organice de baloane cromate și frunze de palmier exotice aurite.">
+                        <div class="event-img-wrap">
                             <span class="event-badge">Jubileu • 50 Ani</span>
-                            <img src="images/eveniment-aniversare-50.jpeg" alt="Decor aniversare 50 ani auriu și baloane aurii cromate"
+                            <img src="images/eveniment-aniversare-50.jpeg" alt="Decor aniversare 50 ani cu baloane aurii cromate"
                                 loading="lazy">
                         </div>
                         <div class="event-info">
                             <h3>Jubileu „Gold 50” Elegance</h3>
-                            <p class="event-desc">Design nobil în tonuri calde de auriu metalizat, nude și frunze
-                                exotice uscate. Un photo corner rafinat pentru o aniversare memorabilă.</p>
+                            <p class="event-desc">Design nobil în tonuri de auriu metalizat, nude și frunze exotice
+                                aurite. Un photo corner rafinat pentru o aniversare memorabilă.</p>
                             <ul class="event-features-list">
                                 <li>👑 Baloane cromate aurii & nude</li>
-                                <li>🌿 Frunze de palmier aurite</li>
-                                <li>📸 Panou foto rotund catifelat</li>
+                                <li>🌿 Frunze de palmier aurite decorative</li>
+                                <li>📸 Panou rotund catifelat cu cifra 50</li>
                             </ul>
-                            <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20o%20ofert%C4%83%20pentru%20decor%20Aniversare%2050%20ani."
-                                target="_blank" class="btn-event-wa">Cere Ofertă Aniversare</a>
+                            <span class="event-tap-hint">Apasă pentru detalii & foto mărită →</span>
                         </div>
                     </div>
 
                     <!-- Event 3: Botez Teddy Bear Caramel -->
-                    <div class="event-card fade-up">
-                        <div class="event-img-wrap" data-img="images/eveniment-botez-teddy.jpeg"
-                            data-title="Botez Tematic „Warm Teddy Bear”"
-                            data-desc="Photo corner de vis pentru botez cu tematica ursuleților de pluș: draperie teracotă, nume decupat 3D, nori de baloane caramel, nude și alb, înconjurate de ursuleți pufoși.">
+                    <div class="event-card fade-up"
+                        data-img="images/eveniment-botez-teddy.jpeg"
+                        data-title="Botez Tematic „Warm Teddy Bear”"
+                        data-badge="Botez Băiețel"
+                        data-desc="Photo corner cald și primitor pentru botez: draperie teracotă, nume decupat 3D caligrafic, arcade de baloane caramel, crem și alb, înconjurate de ursuleți pufoși de pluș.">
+                        <div class="event-img-wrap">
                             <span class="event-badge">Botez Băiețel</span>
-                            <img src="images/eveniment-botez-teddy.jpeg" alt="Decor botez cu ursuleți de pluș și baloane caramel crem"
+                            <img src="images/eveniment-botez-teddy.jpeg" alt="Decor botez cu ursuleți de pluș și baloane caramel"
                                 loading="lazy">
                         </div>
                         <div class="event-info">
                             <h3>Botez Tematic „Warm Teddy Bear”</h3>
-                            <p class="event-desc">Un decor cald și primitor cu draperie teracotă, arcadă de baloane
-                                caramel & crem, ursuleți adorabili de pluș și nume personalizat.</p>
+                            <p class="event-desc">Draperie teracotă caldă, arcadă organică de baloane caramel & crem,
+                                ursuleți adorabili de pluș și nume personalizat.</p>
                             <ul class="event-features-list">
-                                <li>🧸 Ursuleți de pluș integrați în decor</li>
+                                <li>🧸 Ursuleți de pluș integrați în arcadă</li>
                                 <li>✨ Nume personalizat volumetrice caligrafic</li>
-                                <li>🍂 Nuanțe calde caramel, nude & teracotă</li>
+                                <li>🍂 Cromatică caldă caramel, nude & teracotă</li>
                             </ul>
-                            <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20o%20ofert%C4%83%20pentru%20decor%20Botez%20Teddy%20Bear."
-                                target="_blank" class="btn-event-wa">Cere Ofertă Botez</a>
+                            <span class="event-tap-hint">Apasă pentru detalii & foto mărită →</span>
                         </div>
                     </div>
 
                     <!-- Event 4: Botez Sweet Pink Princess -->
-                    <div class="event-card fade-up delay-1">
-                        <div class="event-img-wrap" data-img="images/eveniment-botez-pink.jpeg"
-                            data-title="Botez „Sweet Pink Princess”"
-                            data-desc="Arcadă diafană de baloane în nuanțe delicate de roz pudrat, alb perlat și baloane transparente, draperie albă vaporoasă și ursuleț de pluș gigant.">
+                    <div class="event-card fade-up delay-1"
+                        data-img="images/eveniment-botez-pink.jpeg"
+                        data-title="Botez „Sweet Pink Princess”"
+                        data-badge="Botez Fetiță"
+                        data-desc="Arcadă diafană de baloane în nuanțe delicate de roz pudrat, alb perlat și baloane transparente cristal, draperie albă vaporoasă și ursuleț de pluș gigant.">
+                        <div class="event-img-wrap">
                             <span class="event-badge">Botez Fetiță</span>
-                            <img src="images/eveniment-botez-pink.jpeg" alt="Arcadă de baloane roz pastel și alb pentru botez fetiță"
+                            <img src="images/eveniment-botez-pink.jpeg" alt="Arcadă de baloane roz pastel pentru botez"
                                 loading="lazy">
                         </div>
                         <div class="event-info">
@@ -617,11 +547,10 @@
                                 cristal, draperii albe și accente de poveste pentru micuța prințesă.</p>
                             <ul class="event-features-list">
                                 <li>🎀 Baloane roz pudrat & transparente</li>
-                                <li>🕊️ Draperie albă elegantă</li>
+                                <li>🕊️ Draperie albă elegantă vaporoasă</li>
                                 <li>💖 Nume personalizat la alegere</li>
                             </ul>
-                            <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20o%20ofert%C4%83%20pentru%20decor%20Botez%20Feti%C8%9B%C4%83."
-                                target="_blank" class="btn-event-wa">Cere Ofertă Botez Fetiță</a>
+                            <span class="event-tap-hint">Apasă pentru detalii & foto mărită →</span>
                         </div>
                     </div>
 
@@ -634,37 +563,34 @@
                         <div class="service-box">
                             <div class="service-icon">🎈</div>
                             <h4>Arcade & Ghirlande Organice</h4>
-                            <p>Baloane latex premium în orice cromatică, rezistente la temperatură și interior/exterior.
-                            </p>
+                            <p>Baloane latex premium în orice cromatică, rezistente la temperatură.</p>
                         </div>
                         <div class="service-box">
                             <div class="service-icon">💡</div>
                             <h4>Cifre & Litere Luminoase</h4>
-                            <p>Cifre volumetrice 3D cu becuri calde retro pentru aniversări, majorate de 18 ani sau nunți.
-                            </p>
+                            <p>Cifre volumetrice 3D cu becuri calde retro pentru aniversări și nunți.</p>
                         </div>
                         <div class="service-box">
                             <div class="service-icon">🖼️</div>
                             <h4>Photo Corner & Panou Nume</h4>
-                            <p>Panouri rotunde sau hexagonale, draperii fine, sigle personalizate cu numele sărbătoritului.
-                            </p>
+                            <p>Panouri rotunde, draperii fine și sigle personalizate cu numele sărbătoritului.</p>
                         </div>
                         <div class="service-box">
                             <div class="service-icon">🌸</div>
                             <h4>Aranjamente Mese & Sală</h4>
-                            <p>Decor floral pentru mese invitați, prezidiu miri/nași și accesorii tematice complete.</p>
+                            <p>Decor floral pentru mese invitați, prezidiu și accesorii tematice complete.</p>
                         </div>
                     </div>
 
+                    <!-- Single Consultation Callout -->
                     <div class="event-cta-banner">
-                        <div>
-                            <h4>Plănuiești un eveniment în curând?</h4>
-                            <p>Contactează-ne pe WhatsApp pentru disponibilitate, consultanță și o ofertă personalizată
-                                fără obligații!</p>
+                        <div class="event-cta-text">
+                            <h4>Plănuiești un eveniment în Focșani sau Vrancea?</h4>
+                            <p>Contactează-ne pentru disponibilitatea datei și o consultanță fără obligații.</p>
                         </div>
-                        <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20s%C4%83%20discut%C4%83m%20despre%20decorul%20unui%20eveniment."
+                        <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20s%C4%83%20discut%C4%83m%20despre%20decorul%20unui%20eveniment%20(botez%20/%20majorat%20/%20aniversare)."
                             target="_blank" class="cta-button primary">
-                            📲 Discută Evenimentul pe WhatsApp
+                            Consultanță Evenimente
                         </a>
                     </div>
                 </div>
@@ -689,7 +615,7 @@
                         <h2>Florăria Coquette Focșani</h2>
                         <p>Suntem un atelier floral și butic de cadouri din Focșani, ghidați de dragostea pentru frumos
                             și atenția meticuloasă la detalii. Fiecare buchet, fiecare cadou și fiecare decor de
-                            eveniment pe care îl realizăm poartă o fărâmă din pasiunea noastră sinceră.</p>
+                            eveniment poartă o fărâmă din pasiunea noastră sinceră.</p>
 
                         <ul class="features">
                             <li>
@@ -727,7 +653,7 @@
                 <div class="section-header fade-in">
                     <span class="subtitle">Suntem la un Mesaj Distanță</span>
                     <h2>Ne Găsești Aici</h2>
-                    <p>Fie că ai nevoie de un buchet de urgență, de un cadou special sau de consultanță pentru un
+                    <p>Fie că ai nevoie de un buchet de urgență, de un cadou deosebit sau de consultanță pentru un
                         eveniment, suntem bucuroși să te ajutăm!</p>
                 </div>
 
@@ -742,36 +668,31 @@
                             <div class="icon-circle">📞</div>
                             <h3>Telefon & WhatsApp</h3>
                             <p><a href="tel:0770141977">0770 141 977</a></p>
-                            <p class="small-text">Răspundem rapid pe WhatsApp în timpul programului de lucru</p>
-                            <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20V%C4%83%20contactez%20pentru%20o%20comand%C4%83."
-                                target="_blank" class="direct-wa-link">
-                                💬 Deschide WhatsApp Direct
-                            </a>
+                            <p class="small-text">Disponibili pentru comenzi și consultanță rapidă</p>
                         </div>
                         <div class="info-card">
                             <div class="icon-circle">📱</div>
                             <h3>Social Media</h3>
-                            <p>Urmărește-ne pentru noile noastre creații florale și decoruri:</p>
+                            <p>Urmărește creațiile noastre recente:</p>
                             <a href="https://instagram.com/florariacoquettefocsani" target="_blank"
                                 class="social-link">@florariacoquettefocsani</a>
                         </div>
                     </div>
 
                     <form class="contact-form fade-up delay-1" id="contactForm">
-                        <h3>Trimite-ne un mesaj</h3>
-                        <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem;">Completează
-                            formularul de mai jos, iar mesajul va fi trimis direct pe WhatsApp-ul nostru pentru o
-                            preluare imediată a comenzii.</p>
+                        <h3>Scrie-ne o solicitare</h3>
+                        <p class="form-intro">Completează formularul de mai jos, iar detaliile vor fi trimise direct pe
+                            WhatsApp pentru a-ți răspunde imediat.</p>
                         <div class="form-group">
-                            <label for="name" style="display:block; margin-bottom: 6px; font-size: 0.9rem;">Numele tău</label>
+                            <label for="name">Numele tău</label>
                             <input type="text" id="name" placeholder="ex: Maria Ionescu" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone" style="display:block; margin-bottom: 6px; font-size: 0.9rem;">Număr de telefon</label>
+                            <label for="phone">Număr de telefon</label>
                             <input type="tel" id="phone" placeholder="ex: 07xxxxxxxx" required>
                         </div>
                         <div class="form-group">
-                            <label for="product_type" style="display:block; margin-bottom: 6px; font-size: 0.9rem;">Tip comandă</label>
+                            <label for="product_type">Tip solicitare</label>
                             <select id="product_type" class="custom-select">
                                 <option value="Buchet Floral">Buchet de Flori Proaspete</option>
                                 <option value="Cadou Special">Cadou Special / Piele / Caligrafie</option>
@@ -781,18 +702,17 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message" style="display:block; margin-bottom: 6px; font-size: 0.9rem;">Detalii comandă</label>
-                            <textarea id="message" placeholder="Descrie produsul dorit, data la care ai nevoie de el sau orice preferință..." rows="4" required></textarea>
+                            <label for="message">Mesajul tău</label>
+                            <textarea id="message" placeholder="Descrie produsul dorit sau detaliile evenimentului tău..." rows="4" required></textarea>
                         </div>
-                        <button type="submit" class="cta-button primary full-width">Trimite Comanda pe WhatsApp <span
-                                style="margin-left:8px; font-size:1.2rem;">📱</span></button>
+                        <button type="submit" class="cta-button primary full-width">Trimite Mesajul pe WhatsApp</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Product Lightbox Modal -->
+    <!-- Product Lightbox Modal (Where WhatsApp order button is logically placed) -->
     <div id="product-modal" class="modal-backdrop" aria-hidden="true">
         <div class="modal-dialog">
             <button class="modal-close" id="modal-close-btn" aria-label="Închide">&times;</button>
@@ -803,25 +723,24 @@
                 <div class="modal-details-col">
                     <span id="modal-badge" class="product-badge">Coquette</span>
                     <h3 id="modal-title">Nume Produs</h3>
-                    <p id="modal-desc" class="modal-description">Descrierea completă a produsului va apărea aici.</p>
+                    <p id="modal-desc" class="modal-description">Descrierea detaliată a produsului.</p>
                     <div class="modal-perks">
-                        <div class="perk-item">🚚 Livrare disponibilă în Focșani</div>
+                        <div class="perk-item">🚚 Livrare disponibilă în Focșani & Vrancea</div>
                         <div class="perk-item">🎀 Ambalaj premium cadou inclus</div>
                         <div class="perk-item">✨ Realizat manual la comandă</div>
                     </div>
                     <a id="modal-wa-btn" href="#" target="_blank" class="cta-button primary full-width modal-wa-action">
-                        <span>💬</span> Comandă Acest Produs pe WhatsApp
+                        <span>💬</span> Comandă pe WhatsApp
                     </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Floating WhatsApp Action Button -->
+    <!-- Minimal Floating WhatsApp Icon (Unobtrusive 52px circle) -->
     <a href="https://wa.me/40770141977?text=Bun%C4%83%20ziua!%20V%C4%83%20contactez%20de%20pe%20site-ul%20Flor%C4%83ria%20Coquette."
-        target="_blank" class="floating-wa" title="Scrie-ne pe WhatsApp" aria-label="Comandă rapidă pe WhatsApp">
+        target="_blank" class="floating-wa" title="Scrie-ne pe WhatsApp" aria-label="WhatsApp">
         <span class="floating-wa-icon">💬</span>
-        <span class="floating-wa-text">Comandă WhatsApp</span>
     </a>
 
     <!-- Footer -->
@@ -835,8 +754,7 @@
                         <span class="logo-sub">Flori • Cadouri • Evenimente</span>
                     </div>
                 </div>
-                <p>Transformăm visele în realitate prin artă florală, cadouri de colecție și decoruri spectaculoase de
-                    eveniment în Focșani.</p>
+                <p>Flori de colecție, cadouri de lux și decoruri memorabile de eveniment în Focșani.</p>
             </div>
             <div class="footer-links">
                 <a href="#home">Acasă</a>
@@ -852,14 +770,11 @@
         </div>
         <div class="footer-bottom">
             <p>&copy; <span id="year">2026</span> Florăria Coquette Focșani. Toate drepturile rezervate.</p>
-            <p class="made-by" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.6;">Florărie, Cadouri & Decor
-                Evenimente Focșani</p>
+            <p class="made-by" style="font-size: 0.8rem; margin-top: 6px; opacity: 0.6;">Florărie, Cadouri & Decor Evenimente Focșani</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
-</html>
 
 </html>
