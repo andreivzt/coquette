@@ -16,7 +16,7 @@ if (yearEl) {
 
 // Navbar Scroll Effect
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
+    if (window.scrollY > 30) {
         navbar.classList.add('scrolled');
     } else {
         navbar.classList.remove('scrolled');
@@ -54,10 +54,10 @@ if (cursorGlow && window.matchMedia('(pointer: fine)').matches) {
             target.closest('.event-card')) {
             cursorGlow.style.opacity = '0.75';
             cursorGlow.style.background = 'radial-gradient(circle, rgba(240, 142, 165, 0.45) 0%, transparent 60%)';
-            cursorGlow.style.transform = 'translate(-50%, -50%) scale(1.2)';
+            cursorGlow.style.transform = 'translate(-50%, -50%) scale(1.15)';
         } else {
             cursorGlow.style.opacity = '1';
-            cursorGlow.style.background = 'radial-gradient(circle, rgba(240, 142, 165, 0.28) 0%, transparent 70%)';
+            cursorGlow.style.background = 'radial-gradient(circle, rgba(240, 142, 165, 0.25) 0%, transparent 70%)';
             cursorGlow.style.transform = 'translate(-50%, -50%) scale(1)';
         }
     });
@@ -82,8 +82,8 @@ const observeElements = () => {
             }
         });
     }, {
-        threshold: 0.08,
-        rootMargin: "0px 0px -40px 0px"
+        threshold: 0.06,
+        rootMargin: "0px 0px -30px 0px"
     });
 
     const elementsToAnimate = document.querySelectorAll('.fade-up, .fade-in, .fade-left, .fade-right');
@@ -106,10 +106,9 @@ const initCatalogFilters = () => {
                 const category = card.getAttribute('data-category');
                 if (filterValue === 'all' || category === filterValue) {
                     card.classList.remove('hidden');
-                    // Add animate class so it stays visible
                     setTimeout(() => {
                         card.classList.add('animate');
-                    }, 50);
+                    }, 40);
                 } else {
                     card.classList.add('hidden');
                 }
@@ -118,7 +117,7 @@ const initCatalogFilters = () => {
     });
 };
 
-// Product Lightbox Modal
+// Product & Event Lightbox Modal
 const initProductModal = () => {
     const modal = document.getElementById('product-modal');
     const closeBtn = document.getElementById('modal-close-btn');
@@ -137,8 +136,8 @@ const initProductModal = () => {
         modalBadge.textContent = data.badge || 'Florăria Coquette';
         modalDesc.textContent = data.desc;
 
-        // Compose WhatsApp message
-        const messageText = `Bună ziua! Aș dori să comand sau să aflu mai multe detalii despre produsul "${data.title}" de pe site-ul Florăria Coquette.`;
+        // Custom WhatsApp inquiry per item
+        const messageText = `Bună ziua! Aș dori să comand sau să aflu disponibilitatea pentru "${data.title}" de pe site-ul Florăria Coquette.`;
         const waLink = `https://wa.me/${WA_PHONE_NUMBER}?text=${encodeURIComponent(messageText)}`;
         modalWaBtn.href = waLink;
 
@@ -169,51 +168,28 @@ const initProductModal = () => {
         }
     });
 
-    // Attach click listeners to "Detalii" buttons
-    const detailBtns = document.querySelectorAll('.btn-details');
-    detailBtns.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const card = btn.closest('.flower-card');
-            const badgeEl = card.querySelector('.product-badge');
+    // Attach click listeners to all flower cards
+    const flowerCards = document.querySelectorAll('.flower-card');
+    flowerCards.forEach(card => {
+        card.addEventListener('click', () => {
             openModal({
-                img: btn.getAttribute('data-img'),
-                title: btn.getAttribute('data-title'),
-                desc: btn.getAttribute('data-desc'),
-                badge: badgeEl ? badgeEl.textContent : 'Florăria Coquette'
+                img: card.getAttribute('data-img'),
+                title: card.getAttribute('data-title'),
+                desc: card.getAttribute('data-desc'),
+                badge: card.getAttribute('data-badge') || 'Florăria Coquette'
             });
         });
     });
 
-    // Clicking image wrapper also opens modal
-    const imgWrappers = document.querySelectorAll('.img-wrapper');
-    imgWrappers.forEach(wrapper => {
-        wrapper.addEventListener('click', () => {
-            const card = wrapper.closest('.flower-card');
-            const btn = card ? card.querySelector('.btn-details') : null;
-            if (btn) {
-                const badgeEl = card.querySelector('.product-badge');
-                openModal({
-                    img: btn.getAttribute('data-img'),
-                    title: btn.getAttribute('data-title'),
-                    desc: btn.getAttribute('data-desc'),
-                    badge: badgeEl ? badgeEl.textContent : 'Florăria Coquette'
-                });
-            }
-        });
-    });
-
-    // Clicking event image wrapper opens modal with event details
-    const eventImgWrappers = document.querySelectorAll('.event-img-wrap');
-    eventImgWrappers.forEach(wrap => {
-        wrap.addEventListener('click', () => {
-            const card = wrap.closest('.event-card');
-            const badgeEl = card ? card.querySelector('.event-badge') : null;
+    // Attach click listeners to all event cards
+    const eventCards = document.querySelectorAll('.event-card');
+    eventCards.forEach(card => {
+        card.addEventListener('click', () => {
             openModal({
-                img: wrap.getAttribute('data-img'),
-                title: wrap.getAttribute('data-title'),
-                desc: wrap.getAttribute('data-desc'),
-                badge: badgeEl ? badgeEl.textContent : 'Organizare Evenimente'
+                img: card.getAttribute('data-img'),
+                title: card.getAttribute('data-title'),
+                desc: card.getAttribute('data-desc'),
+                badge: card.getAttribute('data-badge') || 'Organizare Evenimente'
             });
         });
     });
@@ -235,14 +211,14 @@ const initContactForm = () => {
         const message = document.getElementById('message').value.trim();
 
         // Format WhatsApp text
-        const waText = `Bună ziua! Mă numesc ${name} (Tel: ${phone}).\nTip solicitare: ${productType}\n\nMesaj comandă:\n${message}`;
+        const waText = `Bună ziua! Mă numesc ${name} (Tel: ${phone}).\nTip solicitare: ${productType}\n\nMesaj:\n${message}`;
         const waUrl = `https://wa.me/${WA_PHONE_NUMBER}?text=${encodeURIComponent(waText)}`;
 
         // Change button visual state temporarily
         const btn = contactForm.querySelector('button[type="submit"]');
         const originalText = btn.innerHTML;
-        btn.textContent = 'Se redirecționează către WhatsApp...';
-        btn.style.opacity = '0.8';
+        btn.textContent = 'Se redirecționează...';
+        btn.style.opacity = '0.75';
 
         // Open WhatsApp in a new tab
         window.open(waUrl, '_blank');
